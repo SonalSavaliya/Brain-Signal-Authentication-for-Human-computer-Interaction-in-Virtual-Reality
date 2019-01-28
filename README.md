@@ -4,7 +4,7 @@ The purpose of this study was to determine if a Virtual Reality (VR) system comb
 
 ### For Future Work
 
-We can analyze VR and non-VR signals in analysis. 
-We can compare the analysis with other available datasets
-The VR analysis could be applied to brain-based biometric authentication
-Participant health concerns could be identified during EEG scans
+- We can analyze VR and non-VR signals in analysis. 
+- We can compare the analysis with other available datasets
+- The VR analysis could be applied to brain-based biometric authentication
+- Participant health concerns could be identified during EEG scans
