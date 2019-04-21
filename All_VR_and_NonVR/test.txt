@@ -1,3 +1,0 @@
-Hello!
-
-Here, all files are testing for VR and NonVR EEG data.
