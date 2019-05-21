@@ -1,8 +1,13 @@
-# Brain-Signals-Computing-for-Human-Computer-Interaction
+# Brain Signal Authentication for Human Computer Interaction using Virtual Reality 
 
-The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. This is a team project. My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset. We used MNE python library to eradicate noise and made them cleaned. You can see the code for that. 
+### Data Collection and Pre-processing
+
+The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset. Data were preprocessed using MNE python library. 
  
 
-### For Future Work
+### Data Analysis
 
-Feature extraction of VR and nonVR EEG will be done and distance computation will be performed to determine subject authenticity. A demonstration will be implemented to showcase this technology for use in EEG based biometric authentication.
+- Extrected features of each subject using Statistical Histogram, Autoregressive and Power Spectral Density methods
+- Calculated Inter (Between person) and Intra (Within person) distance and set target value 1 for Inter and 0 for Intra
+- Base  on Inter and Intra distance, Support Vectore Machine (SVM) classifier was used for classification
+- If data is within Intra data, then person belogs to the same group
