@@ -2,20 +2,21 @@
 
 The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. 
 
-### Data Collection
+### Data Collection:
 
 My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals by combine with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and Laptops were used to collect non-VR data. Three mins of data were collected per subject without muscle movement.  
 
-![Img 1: 8 Channel Location on Headset](Images/8 channel location.PNG)
+<p align="center"><img src="https://github.com/SonalSavaliya/Brain-Signal-Authentication-for-Human-computer-Interaction-in-Virtual-Reality/blob/master/Images/8%20channel%20location.PNG" />
+  <p align="center">Image 1: 8 Channel Location on Headset</p>
+</p>
 
-  Image 1: 8 Channel Location on Headset
-
-![Img 2: 8 Channel Brain Signal Streaming](Images/EEG Streaming.png)
+<p align="center"><img src="https://github.com/SonalSavaliya/Brain-Signal-Authentication-for-Human-computer-Interaction-in-Virtual-Reality/blob/master/Images/EEG%20Streaming.png"  height="500" />
+  <p align="center">Image 2: 8 Channel EEG Streaming</p>
+</p>
  
-  Image 2: 8 Channel Brain Signal Streaming
+ 
 
-
-### Data Pre-processing and Analysis
+### Data Pre-processing and Analysis:
 
 In data preprocessing, bad channels, eye blink and background noise were removed using MNE, Pandas, Numpy and Matplotlib python libraries. 
 
