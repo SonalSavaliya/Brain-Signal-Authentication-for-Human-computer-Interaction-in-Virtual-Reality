@@ -1,13 +1,40 @@
-# Brain Signal Authentication for Human Computer Interaction using Virtual Reality 
+# Brain Signal Authentication for Human-Computer Interaction using Virtual Reality 
 
-### Data Collection and Pre-processing
+The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. 
 
-The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset. Data were preprocessed using MNE python library. 
+### Data Collection
+
+My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals by combine with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and Laptops were used to collect non-VR data. Three mins of data were collected per subject without muscle movement.  
+
+![Img 1: 8 Channel Location on Headset](Images/8 channel location.PNG)
+
+  Image 1: 8 Channel Location on Headset
+
+![Img 2: 8 Channel Brain Signal Streaming](Images/EEG Streaming.png)
  
+  Image 2: 8 Channel Brain Signal Streaming
 
-### Data Analysis
 
-- Extrected features of each subject using Statistical Histogram, Autoregressive and Power Spectral Density methods
-- Calculated Inter (Between person) and Intra (Within person) distance and set target value 1 for Inter and 0 for Intra
-- Base  on Inter and Intra distance, Support Vectore Machine (SVM) classifier was used for classification
-- If data is within Intra data, then person belogs to the same group
+### Data Pre-processing and Analysis
+
+In data preprocessing, bad channels, eye blink and background noise were removed using MNE, Pandas, Numpy and Matplotlib python libraries. 
+
+- For features Extraction, three methods were selected:
+  1) Statistical Histogram (SH)
+  2) Autoregressive (AR)
+  3) Power Spectral Density (PSD)
+  
+  These methods were implemented with different time segments like 5 sec and 10 sec. We also tried a combination of two methods, for instance, Autoregressive with Statistical Histogram and  Statistical Histogram with Power Spectral Density.
+  
+- Then calculated Inter (Between person) and Intra (Within person) distance and set target value 1 for Inter and 0 for Intra
+- Based on Inter and Intra distance, the Support Vector Machine (SVM) classifier was used for classification
+- If data is within Intra data, then the person belongs to the same group
+
+
+### Conclusion:
+
+In this research, the authentication of brain signals in virtual reality was performed with three different feature extraction methods with different parameters. Autoregressive with Statistical Histogram works best compared to the other methods tested. Also, for classification, there was no significant difference between the accuracy rates for VR and Non-VR EEG data.
+
+
+
+
