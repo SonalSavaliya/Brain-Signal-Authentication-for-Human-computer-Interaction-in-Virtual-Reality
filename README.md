@@ -2,9 +2,11 @@
 
 The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. 
 
+The research paper can be accessed [here](http://csis.pace.edu/~ctappert/srd/b2.pdf).
+
 ### Data Collection:
 
-My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals by combine with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and Laptops were used to collect non-VR data. Three mins of data were collected per subject without muscle movement.  
+My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals combined with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software was used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and computers were used to collect non-VR data. Three minutes of data was collected per subject without any muscle movement.  
 
 <p align="center"><img src="https://github.com/SonalSavaliya/Brain-Signal-Authentication-for-Human-computer-Interaction-in-Virtual-Reality/blob/master/Images/8%20channel%20location.PNG" />
   <p align="center">Image 1: 8 Channel Location on Headset</p>
@@ -25,16 +27,18 @@ In data preprocessing, bad channels, eye blink and background noise were removed
   2) Autoregressive (AR)
   3) Power Spectral Density (PSD)
   
-  These methods were implemented with different time segments like 5 sec and 10 sec. We also tried a combination of two methods, for instance, Autoregressive with Statistical Histogram and  Statistical Histogram with Power Spectral Density.
+  These methods were implemented with 5 seconds and 10 seconds time frames. A combination of two methods, for instance, Autoregressive with Statistical Histogram and  Statistical Histogram with Power Spectral Density were tried.
   
-- Then calculated Inter (Between person) and Intra (Within person) distance and set target value 1 for Inter and 0 for Intra
+  For VR dataset, accuracy rate was 71.66% (SH), 70.92% (PSD+SH), and 75.62% (AR+SH), and for NonVR dataset, accuracy rate was 75.08% (SH), 70.92% (PSD+SH), and 75.70% (AR+SH).
+  
+  
+- After that, Inter (Between person) and Intra (Within person) distance were calculated with set target value 1 for Inter and 0 for Intra
 - Based on Inter and Intra distance, the Support Vector Machine (SVM) classifier was used for classification
-- If data is within Intra data, then the person belongs to the same group
 
 
 ### Conclusion:
 
-In this research, the authentication of brain signals in virtual reality was performed with three different feature extraction methods with different parameters. Autoregressive with Statistical Histogram works best compared to the other methods tested. Also, for classification, there was no significant difference between the accuracy rates for VR and Non-VR EEG data.
+In this research, the authentication of brain signals in virtual reality was performed with three different feature extraction methods. Autoregressive with Statistical Histogram works better compared to other methods. There was no significant difference in the accuracy rate between VR and Non-VR EEG data.
 
 
 
