@@ -1,12 +1,13 @@
-# Brain Signal Authentication for Human-Computer Interaction using Virtual Reality 
+# Brain Signal Authentication for Human-Computer Interaction in Virtual Reality
 
-The purpose of this study is to determine if a Virtual Reality (VR) system combined with brain signaling can produce biometric authentication in a usable form. 
+The purpose of this research was to determine whether active portions of a person’s brain are influenced by their using Virtual Reality (VR) and whether those brain signals can be used for user authentication. 
 
-The research paper can be accessed [here](http://csis.pace.edu/~ctappert/srd/b2.pdf).
+The paper was presented at the IEEE CSE 2019 conference in August. The research paper can be accessed [here](https://ieeexplore.ieee.org/document/8919581).
+
 
 ### Data Collection:
 
-My team and I collected VR (Virtual Reality) and non-VR data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals combined with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software was used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and computers were used to collect non-VR data. Three minutes of data was collected per subject without any muscle movement.  
+My team and I collected VR (Virtual Reality) and non-VR Electroencephalography(EEG) data using Ultracortex EEG Mark IV headset with 8 channels. The headset has 8 electrodes to receive brain signals combined with an 8 channel biosensing board. Image 1 shows the locations of electrodes. OpenBCI GUI software was used to stream and store the data. Image 2 shows brain signal streaming. VeeR cardboard was used to collect VR data and computers were used to collect non-VR data. Three minutes of data was collected per subject without any muscle movement.  
 
 <p align="center"><img src="https://github.com/SonalSavaliya/Brain-Signal-Authentication-for-Human-computer-Interaction-in-Virtual-Reality/blob/master/Images/8%20channel%20location.PNG" />
   <p align="center">Image 1: 8 Channel Location on Headset</p>
